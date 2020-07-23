@@ -1,0 +1,9 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <template for:each={items} for:item="item">
+            <div class="slds-col slds-p_medium" key={item.url}>
+                <c-repeater-item item={item} item-layout={itemLayout}></c-repeater-item>
+            </div>
+        </template>
+    </div>
+</template>

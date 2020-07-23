@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-grid slds-grid_vertical">
+        <template if:true={imgUrl}>
+            <div class="slds-col">
+                <img src={imgUrl}></img>
+            </div>
+        </template>
+        <div class="slds-col">
+            <div>
+                <h3 class="slds-text-heading_medium">{heading}</h3>
+            </div>
+            <div>
+                {subTitle}
+            </div>
+        </div>
+    </div>
+</template>

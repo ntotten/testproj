@@ -1,0 +1,9 @@
+<template>
+    <ul class="slds-list_dotted">
+        <template for:each={items} for:item="item">
+            <li key={item.url}>
+                <c-repeater-item item={item} item-layout={itemLayout} ></c-repeater-item>
+            </li>
+        </template>
+    </ul>
+</template>

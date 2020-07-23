@@ -1,0 +1,22 @@
+<template>
+    <!-- For POC - data is directly passed 
+    Ideally there should be a data provider to talk to -->
+
+    <!-- Generated components are hard coded in this playgroud.
+        They should be generated on the server from the design time config.
+        Should be cached for runtime. And in design time we need to figure out how to keep loading
+        newly generated components when the layout changes or new components are added -->
+    <div class="main-container">
+        <h2 class="slds-m-top_large slds-m-bottom_medium slds-border_bottom slds-text-heading_large">Simple grid with card layout</h2>
+        <c-grid-gen1 data={people}></c-grid-gen1>
+
+        <h2 class="slds-m-top_large slds-m-bottom_medium slds-border_bottom slds-text-heading_large">Simple grid with tile layout</h2>
+        <c-grid-gen2 data={people}></c-grid-gen2>
+
+        <h2 class="slds-m-top_large slds-m-bottom_medium slds-border_bottom slds-text-heading_large">Simple list with card layout</h2>
+        <c-list-gen1 data={people}></c-list-gen1>
+        
+        <h2 class="slds-m-top_large slds-m-bottom_medium slds-border_bottom slds-text-heading_large">Simple grid tile, and a few buttons</h2>
+        <c-grid-gen3 data={people}></c-grid-gen3>
+    </div>
+</template>
